@@ -1,0 +1,4 @@
+[toolchain]
+# see https://github.com/Rahix/avr-hal/issues/124
+channel = "nightly-2021-01-07"
+components = ["rust-src"]

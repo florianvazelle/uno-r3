@@ -1,0 +1,9 @@
+[build]
+target = "avr-specs/avr-atmega328p.json"
+
+[target.'cfg(target_arch = "avr")']
+# replace `avrdude -q -C/etc/avrdude.conf -patmega328p -carduino -P/dev/ttyACM0 -D "-Uflash:w:$1:e"`
+runner = "ravedude uno -cb 57600"
+
+[unstable]
+build-std = ["core"]
